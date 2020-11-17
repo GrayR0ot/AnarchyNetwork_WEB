@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="164.132.203.148" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="164.132.203.148">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/var/www/anarchynetwork.eu" local="$PROJECT_DIR$" web="/var/www/anarchynetwork.eu/public" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/storage" />
+            <excludedPath local="true" path="$PROJECT_DIR$/vendor" />
+            <excludedPath local="true" path="$PROJECT_DIR$/.idea" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+  </component>
+</project>

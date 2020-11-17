@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://anarchynetwork.eu/sitemap.xml

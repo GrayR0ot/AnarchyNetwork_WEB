@@ -1,0 +1,394 @@
+/*
+  anarchynetwork's website
+*/
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+
+
+/* ====
+  GLOBAL
+======= */
+::selection {
+  background: #ec9422;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+.page-content {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+.block-right {
+  float: right;
+}
+.block-left {
+  float: left;
+}
+
+ul li a:hover {
+  cursor: pointer;
+}
+
+/* ====
+  SPINNER INPUTS
+======= */
+.ui.spinner.input input {
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important;
+}
+.ui.spinner.input .button.disabled {
+  cursor: not-allowed;
+}
+.ui.spinner.input .buttons .button {
+  background-color: #fff;
+  border: 1px solid rgba(34, 36, 38, 0.15);
+  border-left: none;
+  padding: .2em .3em .3em;
+  height: 21px;
+}
+.ui.spinner.input .spinner.up.button {
+  border-bottom: none;
+  border-top-left-radius: 0;
+}
+.ui.spinner.input .spinner.down.button {
+  border-bottom-left-radius: 0;
+}
+.ui.spinner.input .button .icon {
+  margin: 0;
+}
+
+/* ====
+  MESSAGES
+======= */
+.ui.warning.message a:not(.button) {
+  color: #794B02;
+  text-decoration: underline;
+}
+.ui.success.message a:not(.button) {
+  color: #1A531B;
+  text-decoration: underline;
+}
+.ui.info.message a:not(.button) {
+  color: #0E566C;
+  text-decoration: underline;
+}
+.ui.error.message a:not(.button) {
+  color: #912D2B;
+  text-decoration: underline;
+}
+
+/* ====
+  HEADER
+======= */
+.site-header {
+  background: url('../img/background-min.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 550px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.site-header:after {
+  content: '';
+  background-color: #fff;
+  border-top: 3px solid #ec9422;
+  height: 75px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
+  transform-origin: bottom right;
+
+  width: 103%;
+  padding-bottom: 7.1%;
+  left: -1.5%;
+}
+
+.site-header h2.ui.header {
+  color: #fff;
+  font-weight: 300;
+  font-size: 30px;
+
+  margin-top: 70px;
+  margin-left: 30px;
+  margin-bottom: 40px;
+}
+
+.site-header h2.ui.header p {
+  font-size: 18px;
+
+  margin-left: 65px;
+}
+
+/* ====
+  NAV
+======= */
+
+.ui.menu .dropdown.item .menu {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.ui.menu .ui.dropdown .menu>.item {
+  text-transform: uppercase!important;
+}
+
+.ui.menu.navbar {
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+.ui.menu.navbar .logo {
+  margin-left: 35px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+.ui.menu.navbar .item {
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  text-transform: uppercase;
+}
+.ui.menu.navbar .item:before {
+  background: transparent;
+}
+
+.pusher {
+  z-index: 0!important;
+}
+.ui.menu.navbar.sidebar {
+  overflow: visible!important;
+  max-width: 70%;
+}
+.ui.menu.navbar.sidebar .logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.ui.menu.navbar.sidebar a.ui.button {
+  width: 100%
+}
+.ui.menu.navbar .mobile-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1160px) {
+  .pusher .ui.menu.navbar .item {
+    display: none;
+  }
+  .pusher .ui.menu.navbar .mobile-menu {
+    display: block!important;
+    float: right;
+  }
+}
+
+/* ====
+  BUTTONS
+======= */
+.ui.anarchynetwork.button,
+.ui.anarchynetwork.button:active,
+.ui.anarchynetwork.button:visited,
+.ui.anarchynetwork.button:focus {
+  background-color: #ec9422;
+  color: #ffffff;
+}
+.ui.anarchynetwork.button:hover {
+  background-color: #d88820;
+}
+
+/* ====
+  SUBHEADER
+======= */
+.sub-header {
+  background-color: rgba(0,0,0,0.02);
+
+  padding: 30px 0;
+
+  color: #414141;
+  text-align: center;
+}
+.sub-header .header {
+  font-weight: 300;
+}
+
+.sub-header.rotate:before {
+  content: '';
+  background-color: #f5f4f4;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
+  transform-origin: top left;
+
+  width: 103%;
+  padding-bottom: 7.1%;
+  right: -1.5%;
+  z-index: 1;
+}
+.sub-header.rotate {
+  position: relative;
+  margin-top: -1.8%;
+  padding-top: 0;
+  background-color: #f5f4f4;
+}
+.sub-header.rotate .header {
+  position: relative;
+  z-index: 2;
+}
+
+/* ====
+  BLOCKS/CONTENT
+======= */
+
+.parallax-block .header {
+  color: #fff;
+}
+.parallax-block .segment .header {
+  color: #333;
+}
+
+.parallax-block .huge.header {
+  font-size: 50px;
+}
+.parallax-block .huge.header .sub-header {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.parallax-block {
+  background-image: url('../img/parallax-1.jpg');
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding: 40px;
+
+  color: #fff;
+  z-index: 2;
+  position: relative;
+}
+
+.colored-block {
+  background: #ec9422;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.colored-block p {
+  color: #efefef;
+  font-size: 16px;
+}
+.colored-block .header {
+  color: #fff;
+}
+.colored-block .header .sub.header {
+  color: #e2e2e2;
+}
+.colored-block .segment .header {
+  color: #fff;
+}
+
+.white-block.rotate:before {
+  content: '';
+  background-color: #e2e2e2;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  -ms-transform: rotate(-3deg); /* IE 9 */
+  -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+  transform: rotate(-3deg);
+  transform-origin: top left;
+
+  width: 103%;
+  padding-bottom: 7.1%;
+  right: -1.5%;
+  z-index: 1;
+}
+.white-block.rotate {
+  position: relative;
+  margin-top: -1.8%;
+}
+.white-block.rotate .page-content {
+  position: relative;
+  z-index: 2;
+}
+
+.white-block {
+  background: #e2e2e2;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.white-block .header {
+  color: #ec9422;
+}
+.white-block p {
+  font-size: 16px;
+}
+
+.black-block {
+  background: #222427;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.black-block .header {
+  color: #fff;
+}
+.black-block .header .sub.header {
+  color: #e2e2e2;
+}
+.black-block p {
+  color: #efefef;
+  font-size: 16px;
+}
+.black-block ul li {
+  color: #efefef;
+  font-size: 16px;
+}
+.ui.bulleted.list .list>a.item:before, .ui.bulleted.list>a.item:before, .black-block ul.ui.list li:before {
+    color: #efefef;
+}
+/*.black-block ul {
+  list-style: none;
+}
+.black-block ul li {
+  padding-left: 1em;
+  text-indent: -.7em;
+}
+
+.black-block ul li::before {
+  content: "• ";
+  color: #efefef;
+}*/
+
+/* ====
+  FOOTER
+======= */
+footer {
+  margin-top: 50px;
+}
+
+.footer.segment {
+  padding: 5em 0em;
+}
